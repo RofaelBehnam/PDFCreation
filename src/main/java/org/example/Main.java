@@ -18,7 +18,7 @@ public class Main {
         PdfReader reader = new PdfReader("src/main/resources/contract.pdf");
         PdfWriter writer = new PdfWriter("src/main/resources/contract-modified.pdf");
         PdfDocument pdfDocument = new PdfDocument(reader, writer);
-        addContentToDocument(pdfDocument);;
+        addContentToDocument(pdfDocument);
         pdfDocument.close();
     }
 
