@@ -17,7 +17,7 @@ public class PdfBoxGenerator {
         try {
             PDPageContentStream contentStream = new PDPageContentStream(document, page);
             contentStream.beginText();
-            contentStream.setFont(new PDType1Font(Standard14Fonts.FontName.valueOf("KacstQurn")), 12);
+            contentStream.setFont(new PDType1Font(Standard14Fonts.FontName.HELVETICA), 12);
             contentStream.newLineAtOffset(100, 700);
             contentStream.showText("أهلا و سهلا");
             contentStream.showText("Hello, this is a sample PDF generated using PDFBox.");
