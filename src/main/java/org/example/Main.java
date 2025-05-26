@@ -29,7 +29,7 @@ public class Main {
         LanguageProcessor languageProcessor = new ArabicLigaturizer();
 
         Paragraph para_obj = new Paragraph (languageProcessor.process(paragraph));
-        para_obj.setFont(PdfFontFactory.createFont("/usr/share/fonts/truetype/kacst/mry_KacstQurn.ttf"));
+        para_obj.setFont(PdfFontFactory.createFont("src/main/resources/AeAlarabiya-WGzA.ttf"));
         para_obj.setBaseDirection(BaseDirection.RIGHT_TO_LEFT);
         para_obj.setTextAlignment(TextAlignment.RIGHT);
         document.add(para_obj);

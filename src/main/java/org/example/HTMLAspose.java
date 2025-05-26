@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 
 public class HTMLAspose {
     public static void main(String[] args) {
-        String DATA_DIR = "/home/rofael/IdeaProjects/PDFEditor/src/main/resources/";
+        String DATA_DIR = "/home/rofael/IdeaProjects/PDFCreation/src/main/resources/";
         // Create a HTML LoadOptions
         HtmlLoadOptions options = new HtmlLoadOptions();
 

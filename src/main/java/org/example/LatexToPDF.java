@@ -8,7 +8,7 @@ public class LatexToPDF {
     public static void main(String[] args) {
         // This code example demonstrates how to create a PDF from TeX source file.
 // Working directory
-        String dataDir = "/home/rofael/IdeaProjects/PDFEditor/src/main/resources/";
+        String dataDir = "/home/rofael/IdeaProjects/PDFCreation/src/main/resources/";
 
 // Create typesetting options.
         TeXOptions options = TeXOptions.consoleAppOptions(TeXConfig.objectLaTeX());
