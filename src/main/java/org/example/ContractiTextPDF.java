@@ -8,6 +8,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.properties.BaseDirection;
 import com.itextpdf.layout.properties.TextAlignment;
+import com.itextpdf.layout.properties.VerticalAlignment;
 import com.itextpdf.text.pdf.languages.ArabicLigaturizer;
 import com.itextpdf.text.pdf.languages.LanguageProcessor;
 
@@ -34,6 +35,7 @@ public class ContractiTextPDF {
         Paragraph paragraph = new Paragraph (languageProcessor.process(text));
         paragraph.setFont(PdfFontFactory.createFont("src/main/resources/AeAlarabiya-WGzA.ttf"));
         paragraph.setBaseDirection(BaseDirection.RIGHT_TO_LEFT);
+//        paragraph.setVerticalAlignment(VerticalAlignment.TOP);
         paragraph.setTextAlignment(textAlignment);
         document.add(paragraph);
     }
