@@ -42,7 +42,6 @@ public class ContractiTextPDF {
         document.add(paragraph);
     }
 
-
     private static void addTextParagraph(String text, Document document, TextAlignment textAlignment) throws IOException {
         Paragraph paragraph = new Paragraph (text);
         paragraph.setTextAlignment(textAlignment);
