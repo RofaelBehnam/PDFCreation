@@ -470,7 +470,7 @@ public class Contract {
     private static void addArabicTextParagraph(String text, Document document, TextAlignment textAlignment) throws IOException {
         LanguageProcessor languageProcessor = new ArabicLigaturizer();
         Paragraph paragraph = new Paragraph (languageProcessor.process(text));
-        paragraph.setFont(PdfFontFactory.createFont("src/main/resources/AeAlarabiya-WGzA.ttf"));
+        paragraph.setFont(PdfFontFactory.createFont("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"));
         paragraph.setBaseDirection(BaseDirection.RIGHT_TO_LEFT);
         paragraph.setTextAlignment(textAlignment);
         document.add(paragraph);
@@ -479,7 +479,7 @@ public class Contract {
     private static void addArabicTextParagraphToCell(String text, Cell cell, TextAlignment textAlignment) throws IOException {
         LanguageProcessor languageProcessor = new ArabicLigaturizer();
         Paragraph paragraph = new Paragraph (languageProcessor.process(text));
-        paragraph.setFont(PdfFontFactory.createFont("src/main/resources/AeAlarabiya-WGzA.ttf"));
+        paragraph.setFont(PdfFontFactory.createFont("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"));
         paragraph.setBaseDirection(BaseDirection.RIGHT_TO_LEFT);
         paragraph.setTextAlignment(textAlignment);
         cell.add(paragraph);
